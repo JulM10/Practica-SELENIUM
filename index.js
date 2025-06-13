@@ -1,25 +1,15 @@
-const { Builder, By, until } = require('selenium-webdriver');
+// Descripción: Este script utiliza Selenium WebDriver para realizar pruebas automatizadas.
+// Requisitos: Asegúrate de tener instalado Node.js, Selenium WebDriver y el driver del navegador (ej. ChromeDriver).
+// Crear test en la carpeta tests y luego llamar la funcion desde este archivo.
 
-(async function helloSelenium() {
-  let driver = await new Builder().forBrowser('chrome').build();
+const googleSearch = require('./tests/googleSearch');
+const loginTest = require('./tests/loginTest');
 
-  try {
-    // Ir a Google
-    await driver.get('https://www.google.com');
+(async () => {
+  console.log('🚀 Iniciando test suite...\n');
 
-    // Esperar que aparezca el input y escribir "Selenium"
-    const input = await driver.findElement(By.name('q'));
-    await input.sendKeys('Selenium');
+  await googleSearch();
+  await loginTest();
 
-    // Esperar a que se cargue la sugerencia y presionar Enter
-    await input.submit();
-
-    // Esperar los resultados
-    await driver.wait(until.titleContains('Selenium'), 1000);
-
-    console.log('🚀 Búsqueda completada.');
-  } finally {
-    // Cerrar el navegador
-    await driver.quit();
-  }
+  console.log('\n✅ Todos los tests terminaron.');
 })();
