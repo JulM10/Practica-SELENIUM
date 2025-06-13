@@ -1,0 +1,24 @@
+{
+  "name": "practica-selenium",
+  "version": "1.0.0",
+  "description": "repositorio practica de selenium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulM10/Practica-SELENIUM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulM10/Practica-SELENIUM/issues"
+  },
+  "homepage": "https://github.com/JulM10/Practica-SELENIUM#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.33.0"
+  }
+}
