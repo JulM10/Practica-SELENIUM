@@ -1,3 +1,4 @@
+// Prueba de inicio de sesión con Selenium WebDriver
 const { Builder, By, until } = require('selenium-webdriver');
 
 async function loginTest() {

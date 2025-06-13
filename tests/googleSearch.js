@@ -1,3 +1,4 @@
+//busqueda en google de la palabra "Selenium"
 const { Builder, By, until } = require('selenium-webdriver');
 
 async function googleSearch() {
