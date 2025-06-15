@@ -1,6 +1,6 @@
 const { Builder, By, until } = require('selenium-webdriver');
 
-//probar excepcion NoSuchElementException
+// Probar excepcion NoSuchElementException test
 async function excepcion1Test() {
   const driver = await new Builder().forBrowser('chrome').build();
   try {
