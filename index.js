@@ -4,12 +4,14 @@
 
 const googleSearch = require('./tests/googleSearch');
 const loginTest = require('./tests/loginTest');
+const excepcion1Test = require('./tests/NoSuchElementException');
 
 (async () => {
   console.log('🚀 Iniciando test suite...\n');
 
   await googleSearch();
   await loginTest();
+  await excepcion1Test();
 
   console.log('\n✅ Todos los tests terminaron.');
 })();
