@@ -1,6 +1,13 @@
 const { Builder, By, until } = require('selenium-webdriver');
 
 // Probar excepcion NoSuchElementException test
+/*
+  Test:
+  - Navega a la página de excepciones.
+  - Hace clic en el botón "Add Row".
+  - Espera a que el elemento "row2" sea visible.
+  - Imprime un mensaje de éxito o error.
+*/
 async function excepcion1Test() {
   const driver = await new Builder().forBrowser('chrome').build();
   try {

@@ -1,6 +1,13 @@
 // Prueba de inicio de sesión con Selenium WebDriver
 const { Builder, By, until } = require('selenium-webdriver');
-
+/*
+  Test:
+  - Navega a la página de login.
+  - Ingresa el usuario y contraseña.
+  - Hace clic en el botón de login.
+  - Espera a que se muestre el mensaje de éxito.
+  - Imprime un mensaje de éxito o error.
+*/
 async function loginTest() {
   const driver = await new Builder().forBrowser('chrome').build();
   try {
