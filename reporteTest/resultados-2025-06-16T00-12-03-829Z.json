@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Test Case 1: googleSearch",
+    "estado": "ok",
+    "duracion": "3.77"
+  },
+  {
+    "nombre": "Test Case 2: loginTest",
+    "estado": "ok",
+    "duracion": "3.76"
+  },
+  {
+    "nombre": "Test Case 3: NoSuchElementException",
+    "estado": "ok",
+    "duracion": "7.95"
+  },
+  {
+    "nombre": "Test Case 4: ElementNotInteractableException",
+    "estado": "ok",
+    "duracion": "8.18"
+  }
+]
